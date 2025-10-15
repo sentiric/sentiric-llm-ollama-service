@@ -27,4 +27,4 @@ COPY --chown=appuser:appgroup ./app ./app
 USER appuser
 
 EXPOSE 16040 16041 16042
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "16040"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "16040", "--log-config", "null"]
